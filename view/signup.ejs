@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+<h1>signup</h1>
+<form action="/user/registerUser" method="post">
+    <label for="">Full Name
+        <input type="text" name="name" placeholder="enter your name">
+    </label> <br>
+        <label for="">Email
+        <input type="text" name="email" placeholder="enter your name">
+    </label> <br>
+        <label for="">Password
+        <input type="text" name="password" placeholder="enter your name">
+    </label> <br>
+    <button type="submit">signup</button>
+    
+</form>
+</body>
+</html>
