@@ -1,24 +1,34 @@
-# 🔗 Pocket URL
+# 🔗 Pocket-URL
 
-**Pocket URL** is a feature-rich URL shortener built using **Node.js**, **Express**, and **MongoDB**, leveraging **Server-Side Rendering (SSR)** for optimal performance and SEO-friendly pages.  
-It allows users to shorten long URLs, monitor analytics like click counts, and manage their links securely with full authentication and authorization support.
+Pocket-URL is a modern **URL shortener and analytics platform** that allows users to shorten long URLs, track clicks, and manage all their links from a clean and responsive dashboard.
+
+Built with a full-stack **MERN architecture**, Pocket-URL focuses on simplicity, performance, and a professional user experience.
 
 ---
 
 ## 🚀 Features
 
-- ✂️ **URL Shortening** — Convert long URLs into concise, shareable links.  
-- 📊 **Analytics Dashboard** — Track clicks and view URL performance insights.  
-- 🔒 **User Authentication & Authorization** — Secure login and personalized link management using sessions.  
-- ⚡ **Server-Side Rendering (SSR)** — Faster load times and SEO-friendly pages.  
-- 🗃️ **MongoDB Integration** — All user and URL data stored and managed efficiently.  
-- 🧭 **Clean UI** — Intuitive and responsive design for easy navigation.
+- 🔗 **Instant URL Shortening**
+- 📊 **Click Analytics & Tracking**
+- 🧑‍💻 **User Authentication (Signup / Login)**
+- 📁 **Dashboard to Manage Shortened URLs**
+
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-| Category | Technologies Used |
-|-----------|------------------|
-| **Backend** | Node.js, Express.js |
-| **Frontend** | EJS (Serve
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt (Password Hashing)
+
+---
+
