@@ -13,7 +13,7 @@ if(!redirectUrl) {
         message : 'no valid url provided',
     })
 }
-const shortUrl = `${process.env.SERVER_SIDE_URL}/api/${nanoid(4)}`
+const shortUrl = `https://pocket-url-jvi6.onrender.com/api/${nanoid(4)}`
 const createdUrl = await Url.create({
     shortUrl,
     redirectUrl,
@@ -45,7 +45,7 @@ const handleRedirectUrl = async function(req , res) {
 // console.log(req.params.id)
 
 const findOrignalUrl  = await Url.findOneAndUpdate(
-{shortUrl : `${process.env.SERVER_SIDE_URL}/api/${req.params.id}`},
+{shortUrl : `https://pocket-url-jvi6.onrender.com/api/${req.params.id}`},
 {
     $push: {
       clicks: {
@@ -64,7 +64,7 @@ const handleUrlInfo = async function(req , res) {
    try {
      const url = await Url.findOne(
          {
-         shortUrl : `${process.env.SERVER_SIDE_URL}/api/${req.params.id}` 
+         shortUrl : `https://pocket-url-jvi6.onrender.com/api/${req.params.id}` 
          }
      )
      
@@ -120,7 +120,7 @@ try {
 const handleDelete = async function(req , res) {
     const id = req?.params?.id
     // console.log(id)
-    const url = await Url.findOneAndDelete({shortUrl :  `${process.env.SERVER_SIDE_URL}/api/${id}`})
+    const url = await Url.findOneAndDelete({shortUrl :  `https://pocket-url-jvi6.onrender.com/api/${id}`})
     if(!url) {
         return res
         .status(500)
