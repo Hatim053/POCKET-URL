@@ -5,8 +5,10 @@ import jwt from 'jsonwebtoken'
 
 
 const options = {
-    httpOnly : true,
-    secure : true,
+      httpOnly: true,
+  secure: true,       
+  sameSite: 'none',
+  path : "/" 
 }
 const generateAccessToken = async function(user) {
     const accessToken = user.generateAccessToken()

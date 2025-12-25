@@ -9,7 +9,7 @@ function Dashboard() {
    const {response , error} = useFetch(`${import.meta.env.VITE_SERVER_SIDE_URL}/api/analytics`)
    useEffect(() => {
     if(response) {
-setData(response.urls)
+setData(response.urls || [])
     }
     
    } , [response])
@@ -99,7 +99,7 @@ setData(response.urls)
         }
 
     
-        {!data ? <tr>
+        {data.length == 0 ? <tr>
           <td colSpan="4" className="px-6 py-10 text-center text-slate-500">
             No URLs created yet
           </td> 
