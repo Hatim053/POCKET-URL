@@ -16,9 +16,18 @@ Built with a full-stack **MERN architecture**, Pocket-URL focuses on simplicity,
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠 Tech Stack
 
-| Category | Technologies Used |
-|-----------|------------------|
-| **Backend** | Node.js, Express.js |
-| **Frontend** | EJS (Serve
+### Frontend
+- React.js (Vite)
+- Tailwind CSS
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- bcrypt (Password Hashing)
+
+---
